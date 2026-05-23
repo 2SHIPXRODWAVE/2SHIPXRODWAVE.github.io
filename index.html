@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon Rodriguez-Washington</title>
+  <meta name="description" content="Personal website for Brandon Rodriguez-Washington — student, retired Marine, husband, father, and builder." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top">BRW</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#school">School</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section id="top" class="hero-content">
+      <p class="eyebrow">Student • Retired Marine • Husband • Father</p>
+      <h1>Brandon Rodriguez-Washington</h1>
+      <p class="lead">
+        Building the next chapter with discipline, service, family, and steady forward motion.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#school">View my school focus</a>
+        <a class="button secondary" href="#contact">Get in touch</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section two-column">
+      <div>
+        <p class="section-label">About</p>
+        <h2>Grounded in service. Focused on growth.</h2>
+      </div>
+      <div class="card">
+        <p>
+          I am a retired U.S. Marine, husband, father, and university student working toward a stronger future.
+          My path is shaped by discipline, resilience, family, and a commitment to keep learning.
+        </p>
+      </div>
+    </section>
+
+    <section id="school" class="section">
+      <p class="section-label">University</p>
+      <h2>Current classes</h2>
+      <div class="grid">
+        <article class="class-card">
+          <h3>Spanish Greek</h3>
+          <p>Language, culture, communication, and academic development.</p>
+        </article>
+        <article class="class-card">
+          <h3>Introduction to Clinical Psychology</h3>
+          <p>Foundations of mental health, clinical practice, and human behavior.</p>
+        </article>
+        <article class="class-card">
+          <h3>Physiological Psychology</h3>
+          <p>The connection between the brain, body, behavior, and lived experience.</p>
+        </article>
+        <article class="class-card">
+          <h3>Life Span Development</h3>
+          <p>Human development across childhood, adulthood, family, and aging.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="goals" class="section two-column dark-panel">
+      <div>
+        <p class="section-label">Direction</p>
+        <h2>What I am building</h2>
+      </div>
+      <ul class="goal-list">
+        <li>Organize school, personal files, and email into a system I can actually use.</li>
+        <li>Build stronger academic habits and finish assignments with less chaos.</li>
+        <li>Create tools, systems, and routines that support my family and future goals.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact-card">
+      <p class="section-label">Contact</p>
+      <h2>Contact</h2>
+      <p>This section can be updated with your preferred email, LinkedIn, resume, or portfolio links.</p>
+      <a class="button primary" href="mailto:blrm13@yahoo.com">Email Brandon</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Brandon Rodriguez-Washington. Built with GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
