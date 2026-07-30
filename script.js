@@ -51,3 +51,21 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 
   reveals.forEach((element) => observer.observe(element));
 }
+
+const portfolioToggle = document.querySelector('[data-portfolio-toggle]');
+const portfolioPanel = document.getElementById('david-madina-portfolio');
+
+if (portfolioToggle && portfolioPanel) {
+  portfolioToggle.addEventListener('click', () => {
+    const isOpen = portfolioToggle.getAttribute('aria-expanded') === 'true';
+    portfolioToggle.setAttribute('aria-expanded', String(!isOpen));
+    portfolioPanel.hidden = isOpen;
+
+    const label = portfolioToggle.querySelector('[data-portfolio-label]');
+    if (label) label.textContent = isOpen ? 'Portfolio' : 'Close portfolio';
+
+    if (!isOpen) {
+      portfolioPanel.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+    }
+  });
+}

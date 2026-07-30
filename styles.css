@@ -131,8 +131,8 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
 .entity-note { margin: 24px 0 0; padding-left: 18px; border-left: 3px solid var(--red); color: var(--steel); font-size: 14px; }
 
 .section-investment { background: linear-gradient(145deg, rgba(193,18,31,.14), transparent 36%), #090b0e; border-block: 1px solid var(--gunmetal); }
-.artist-opportunity { margin-bottom: 24px; display: grid; grid-template-columns: .78fr 1.22fr; min-height: 650px; border: 1px solid var(--gunmetal); background: #101318; }
-.artist-lead { min-height: 650px; overflow: hidden; }
+.artist-opportunity { margin-bottom: 24px; display: grid; grid-template-columns: .78fr 1.22fr; min-height: 540px; border: 1px solid var(--gunmetal); background: #101318; }
+.artist-lead { min-height: 540px; overflow: hidden; }
 .artist-lead img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 50% 38%; filter: grayscale(1) contrast(1.06); }
 .artist-copy { padding: clamp(34px, 5vw, 72px); display: flex; flex-direction: column; justify-content: center; }
 .opportunity-tag { color: var(--red); font: 500 12px var(--font-mono); letter-spacing: .09em; text-transform: uppercase; }
@@ -141,6 +141,11 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
 .artist-copy > p { color: #b2b8be; font-size: 18px; line-height: 1.72; }
 .artist-actions { margin-top: 22px; display: flex; gap: 14px; flex-wrap: wrap; }
 .artist-actions .button { min-height: 50px; }
+.portfolio-toggle { gap: 22px; cursor: pointer; font: inherit; }
+.portfolio-toggle [data-portfolio-icon] { font-size: 22px; line-height: 1; transition: transform .2s ease; }
+.portfolio-toggle[aria-expanded="true"] [data-portfolio-icon] { transform: rotate(45deg); }
+.portfolio-panel { scroll-margin-top: 96px; margin-top: 18px; }
+.portfolio-panel[hidden] { display: none; }
 .tattoo-portfolio { scroll-margin-top: 96px; display: grid; grid-template-columns: 1.08fr 1fr 1fr; grid-template-rows: repeat(2, 430px); gap: 18px; }
 .portfolio-tile { min-width: 0; margin: 0; position: relative; overflow: hidden; border: 1px solid var(--gunmetal); background: #08090b; display: grid; grid-template-rows: minmax(0, 1fr) auto; }
 .portfolio-tile-feature { grid-row: span 2; }
@@ -172,6 +177,17 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
 .founder-facts strong { display: block; font: 700 38px var(--font-head); color: var(--white); }
 .founder-facts span { display: block; color: var(--steel); font-size: 13px; }
 
+.community-resources { background: linear-gradient(145deg, rgba(193,18,31,.1), transparent 40%), #0c0f13; border-top: 1px solid var(--gunmetal); }
+.community-resource-card { display: grid; grid-template-columns: 1.45fr .55fr; gap: 48px; padding: clamp(34px, 5vw, 64px); border: 1px solid var(--gunmetal); background: #101318; align-items: end; }
+.resource-type { color: var(--red); font: 500 12px var(--font-mono); letter-spacing: .09em; text-transform: uppercase; }
+.community-resource-card h3 { margin: 24px 0 16px; font-size: clamp(38px, 5vw, 68px); }
+.community-resource-card p { margin: 0; color: #b2b8be; font-size: 18px; line-height: 1.72; }
+.community-resource-action { padding-left: 34px; border-left: 1px solid var(--gunmetal); display: grid; gap: 22px; align-content: end; }
+.community-resource-action > span { color: var(--steel); font: 400 12px var(--font-mono); text-transform: uppercase; letter-spacing: .06em; }
+.community-resource-action .button { width: 100%; }
+.crisis-note { margin: 22px 0 0; padding: 18px 20px; border: 1px solid #42363a; background: rgba(193,18,31,.07); color: #b7bdc3; font-size: 14px; line-height: 1.65; }
+.crisis-note strong { color: var(--white); }
+
 .resources { background: var(--white); color: var(--black); }
 .resources-grid { display: grid; grid-template-columns: 1fr .78fr; gap: 70px; align-items: end; }
 .resource-links { display: grid; border-top: 1px solid #b8b2a8; }
@@ -189,7 +205,7 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
 .footer-brand img { width: 52px; height: 52px; object-fit: contain; }
 .footer-brand strong, .footer-brand span { display: block; }
 .footer-brand span { color: var(--steel); font-size: 12px; }
-.footer-links { display: flex; gap: 24px; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 18px 24px; }
 .footer-links a { color: var(--steel); text-decoration: none; font-size: 13px; }
 .footer-links a:hover { color: var(--white); }
 .site-footer p { grid-column: 1 / -1; margin: 0; color: var(--steel); font: 400 11px var(--font-mono); }
@@ -210,7 +226,8 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
   .site-nav.open { display: flex; }
   .site-nav a { padding: 10px; }
   .hero { min-height: auto; }
-  .hero-shell, .positioning, .artist-opportunity, .founder-grid, .resources-grid { grid-template-columns: 1fr; }
+  .hero-shell, .positioning, .artist-opportunity, .founder-grid, .community-resource-card, .resources-grid { grid-template-columns: 1fr; }
+  .community-resource-action { padding: 28px 0 0; border-left: 0; border-top: 1px solid var(--gunmetal); }
   .artist-lead { min-height: 580px; max-height: 720px; }
   .tattoo-portfolio { grid-template-columns: 1fr 1fr; grid-template-rows: 620px repeat(2, 430px); }
   .portfolio-tile-feature { grid-column: 1 / -1; grid-row: auto; }
