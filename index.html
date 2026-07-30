@@ -1,171 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brandon Rodriguez-Washington | 2SHIPXRODWAVE</title>
-  <meta name="description" content="Personal website for Brandon Rodriguez-Washington — retired Marine, psychology student, and builder of disciplined systems." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2 Ships RW LLC | Business Growth and Execution</title>
+  <meta name="description" content="2 Ships RW LLC helps businesses and mission-driven organizations turn opportunity into execution through strategy, AI-enabled systems, marketing, partnerships, and commerce.">
+  <meta name="theme-color" content="#08090B">
+  <meta property="og:title" content="2 Ships RW LLC | Build the Next Move">
+  <meta property="og:description" content="Veteran-led business growth and execution from Southern California.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://2shipxrodwave.github.io/assets/logo-mark-red.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://2shipxrodwave.github.io/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top">2X</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#school">School</a>
-        <a href="#mission">Mission</a>
-        <a href="#gallery">Photos</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <section id="top" class="hero-content">
-      <p class="eyebrow">2SHIPXRODWAVE • Southern California</p>
-      <h1>Brandon Rodriguez-Washington</h1>
-      <p class="lead">
-        Retired Marine. Psychology student. Builder of disciplined systems, steady habits, and the next chapter.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="#gallery">View the look</a>
-        <a class="button secondary" href="https://www.instagram.com/oshld_warrior/" target="_blank" rel="noopener">@oshld_warrior</a>
-      </div>
-    </section>
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="2 Ships RW LLC home">
+        <img src="assets/logo-mark-red.png" alt="">
+        <span>2 Ships RW LLC</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span></span><span></span><span></span><span class="sr-only">Open navigation</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#approach">Approach</a>
+        <a href="#initiatives">Initiatives</a>
+        <a href="#founder">Founder</a>
+        <a href="#contact" class="nav-cta">Start a conversation</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about" class="section two-column">
-      <div>
-        <p class="section-label">About</p>
-        <h2>Service shaped me. Discipline steadies me. Growth is the mission.</h2>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="route-grid" aria-hidden="true">
+        <svg viewBox="0 0 1200 720" preserveAspectRatio="none">
+          <path class="route route-steel" d="M-20 640 C180 570 300 610 470 470 S810 430 1220 60"></path>
+          <path class="route route-red" d="M-20 420 C210 300 390 390 550 280 S860 290 1220 60"></path>
+          <circle cx="470" cy="470" r="6"></circle>
+          <circle cx="550" cy="280" r="6" class="node-red"></circle>
+          <circle cx="1180" cy="85" r="9" class="node-light"></circle>
+        </svg>
       </div>
-      <div class="card story-card">
-        <p>
-          I am a retired U.S. Marine, a father of three, and a university student studying psychology and human development.
-        </p>
-        <p>
-          This site is a home base for my school work, personal growth, creative projects, and the systems I am building to bring more order to life.
-        </p>
-      </div>
-    </section>
-
-    <section id="principles" class="section principles">
-      <p class="section-label">Operating principles</p>
-      <h2>How I move</h2>
-      <div class="principle-grid">
-        <article>
-          <span>01</span>
-          <h3>Discipline over noise</h3>
-          <p>Clear priorities, steady habits, and fewer distractions.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Built for real life</h3>
-          <p>The work matters because real life demands strength, order, and follow-through.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Learn, apply, repeat</h3>
-          <p>Take what I study, test it in real life, and keep improving.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="school" class="section">
-      <p class="section-label">University</p>
-      <h2>Current academic focus</h2>
-      <div class="grid">
-        <article class="class-card">
-          <h3>Spanish Greek</h3>
-          <p>Building language skills, cultural understanding, and stronger communication.</p>
-        </article>
-        <article class="class-card">
-          <h3>Introduction to Clinical Psychology</h3>
-          <p>Studying mental health, clinical practice, behavior, diagnosis, and support systems.</p>
-        </article>
-        <article class="class-card">
-          <h3>Physiological Psychology</h3>
-          <p>Connecting brain, body, nervous system, emotion, behavior, and real human experience.</p>
-        </article>
-        <article class="class-card">
-          <h3>Life Span Development</h3>
-          <p>Understanding growth across childhood, adulthood, parenting, family, and aging.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="mission" class="section two-column dark-panel">
-      <div>
-        <p class="section-label">Mission</p>
-        <h2>Build a life with structure, purpose, and the courage to keep moving.</h2>
-      </div>
-      <ul class="goal-list">
-        <li>Organize school, files, email, and goals into a system that lowers stress and raises follow-through.</li>
-        <li>Use psychology, discipline, and lived experience to better understand people and serve with wisdom.</li>
-        <li>Create a future that honors service, resilience, discipline, and the responsibility to keep moving forward.</li>
-      </ul>
-    </section>
-
-    <section id="gallery" class="section gallery-section">
-      <div class="gallery-heading">
-        <div>
-          <p class="section-label">Visual identity</p>
-          <h2>Nautical, disciplined, and personal.</h2>
+      <div class="hero-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Rare Finds. Real Value. Veteran-Owned.</p>
+          <h1><span>Turn opportunity</span><span>into execution.</span></h1>
+          <p class="hero-lead">2 Ships RW LLC brings strategy, modern systems, relationships, marketing, and commercial execution together around one clear objective.</p>
+          <div class="actions">
+            <a class="button button-primary" href="mailto:blrm13@yahoo.com?subject=2%20Ships%20RW%20LLC%20Opportunity">Start a conversation</a>
+            <a class="button button-secondary" href="#capabilities">Explore capabilities</a>
+          </div>
+          <div class="hero-proof" aria-label="Founder operating proof">
+            <span>Marine + National Guard leadership</span><span>77+ recruiting contracts</span><span>22 Marines supervised</span>
+          </div>
         </div>
-        <p>
-          Real moments. Service, fatherhood, and the people who make the work matter.
-        </p>
-      </div>
-      <div class="photo-grid" aria-label="Personal photos of Brandon and family">
-        <article class="photo-card tall">
-          <img src="assets/photos/brandon-uniform.jpg" alt="Brandon smiling in uniform" />
-          <div class="photo-copy">
-            <h3>Service and steadiness</h3>
-            <p>Discipline earned the hard way. Calm under weight.</p>
-          </div>
-        </article>
-        <article class="photo-card">
-          <img src="assets/photos/father-son.jpg" alt="Brandon smiling with his child" />
-          <div class="photo-copy">
-            <h3>Fatherhood first</h3>
-            <p>The real reason to build stronger systems and keep moving.</p>
-          </div>
-        </article>
-        <article class="photo-card">
-          <img src="assets/photos/little-one-cap.jpg" alt="Child smiling in Brandon's cap" />
-          <div class="photo-copy">
-            <h3>Legacy at home</h3>
-            <p>Love, protection, and presence — the mission after the mission.</p>
-          </div>
-        </article>
+        <div class="hero-mark reveal" aria-label="2 Ships RW LLC emblem">
+          <img src="assets/logo-detailed-white.png" alt="Two ships, compass, rising route, and dragon inside a rope ring">
+          <div class="coordinate">33.7455° N / 117.8677° W</div>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="section project-strip">
-      <p class="section-label">Next builds</p>
-      <h2>What this site can grow into</h2>
-      <div class="project-list">
-        <div>School portfolio</div>
-        <div>Psychology presentations</div>
-        <div>AI image gallery</div>
-        <div>Resume and career page</div>
+    <section class="positioning section-shell reveal" aria-labelledby="positioning-title">
+      <div>
+        <p class="section-label">The operating idea</p>
+        <h2 id="positioning-title">Broad capability. One accountable path forward.</h2>
+      </div>
+      <div class="positioning-copy">
+        <p>Some opportunities need a strategy. Others need a campaign, a system, a partner network, or a path to market. We organize the right pieces around the result instead of forcing every problem into one service.</p>
+        <a class="text-link" href="#approach">See how the work moves <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
-    <section id="contact" class="section contact-card">
-      <p class="section-label">Contact</p>
-      <h2>Connect with me</h2>
-      <p>If you want to reach me, collaborate, or follow the work I am building, email is the best starting point.</p>
-      <a class="button primary" href="mailto:blrm13@yahoo.com">Email Brandon</a>
+    <section id="capabilities" class="section section-dark">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="section-label">Capabilities / 01</p>
+          <h2>What we help move.</h2>
+          <p>Focused support for founders, businesses, professional-service firms, and mission-driven organizations.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <span>01</span><h3>Growth strategy</h3>
+            <p>Clarify the objective, market, audience, offer, priorities, and path from idea to action.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>02</span><h3>AI-enabled systems</h3>
+            <p>Use practical automation, content workflows, research, and operating tools where they create real leverage.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>03</span><h3>Marketing execution</h3>
+            <p>Build clear messaging, campaign assets, digital presence, and repeatable outreach without empty hype.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>04</span><h3>Partnership development</h3>
+            <p>Identify aligned relationships, shape the value exchange, and move qualified conversations forward.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>05</span><h3>Commerce and market development</h3>
+            <p>Evaluate opportunities, package offers, support go-to-market work, and develop practical revenue paths.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>06</span><h3>Special projects</h3>
+            <p>Bring structure, research, coordination, and disciplined follow-through to high-value work that crosses functions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="section section-light">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="section-label">Approach / 02</p>
+          <h2>From objective to next move.</h2>
+        </div>
+        <div class="process" role="list">
+          <article role="listitem" class="process-step reveal"><span>01</span><div><h3>Define</h3><p>Get precise about the objective, constraints, decision, and measure of progress.</p></div></article>
+          <article role="listitem" class="process-step reveal"><span>02</span><div><h3>Structure</h3><p>Build the plan, system, message, partner map, and operating rhythm needed to move.</p></div></article>
+          <article role="listitem" class="process-step reveal"><span>03</span><div><h3>Activate</h3><p>Put the work into the market, start the right conversations, and coordinate execution.</p></div></article>
+          <article role="listitem" class="process-step reveal"><span>04</span><div><h3>Adjust</h3><p>Read the evidence, protect what is working, correct what is not, and define the next move.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="initiatives" class="section section-dark">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="section-label">Selected initiatives / 03</p>
+          <h2>Work grounded in real missions.</h2>
+          <p>Proof starts with the founder’s own operating work—not invented clients or borrowed credibility.</p>
+        </div>
+        <div class="initiative-grid">
+          <article class="initiative-feature reveal">
+            <div class="initiative-tag">Independent nonprofit</div>
+            <h3>Operation Shield</h3>
+            <p>Veteran mental health, reintegration, mentorship, and suicide-prevention work built around practical support and community connection.</p>
+            <a class="text-link" href="https://oshld.org" target="_blank" rel="noopener">Visit Operation Shield <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="initiative-card reveal">
+            <span>COMMERCE</span><h3>Rare-find and value opportunities</h3>
+            <p>Selective commerce and opportunity development under the promise: rare finds, real value, veteran-owned.</p>
+          </article>
+          <article class="initiative-card reveal">
+            <span>SYSTEMS</span><h3>Founder operating infrastructure</h3>
+            <p>AI-assisted research, production, brand, planning, and execution systems designed to turn limited bandwidth into consistent movement.</p>
+          </article>
+        </div>
+        <p class="entity-note reveal">Operation Shield is a legally and operationally separate nonprofit. Its mission, donations, programs, and payment flows remain distinct from 2 Ships RW LLC.</p>
+      </div>
+    </section>
+
+    <section id="founder" class="section section-founder">
+      <div class="section-shell founder-grid">
+        <div class="founder-mark reveal"><img src="assets/logo-mark-red.png" alt=""></div>
+        <div class="founder-copy reveal">
+          <p class="section-label">Founder / 04</p>
+          <h2>Leadership built under responsibility.</h2>
+          <p>Brandon Rodriguez-Washington is a retired U.S. Marine Staff Sergeant, California Army National Guard Staff Sergeant, former recruiter and station commander, psychology student at Chapman University, father, and founder of Operation Shield.</p>
+          <p>His operating background includes recruiting performance, team leadership, accountability for people and high-value equipment, community work, and building systems under pressure. 2 Ships RW LLC brings that discipline into business without turning service into costume.</p>
+          <div class="founder-facts">
+            <div><strong>22</strong><span>Marines supervised</span></div>
+            <div><strong>77+</strong><span>Recruiting contracts</span></div>
+            <div><strong>1</strong><span>Objective at a time</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resources">
+      <div class="section-shell resources-grid">
+        <div class="reveal">
+          <p class="section-label">Brand resources / 05</p>
+          <h2>One system. One source of truth.</h2>
+          <p>Review the full identity standards or download the production-ready logo package.</p>
+        </div>
+        <div class="resource-links reveal">
+          <a href="2-ships-rw-brand-guidelines/">Open brand guidelines <span>↗</span></a>
+          <a href="assets/2_Ships_RW_LLC_Corrected_Logo_Package.zip" download>Download logo package <span>↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-shell contact-shell reveal">
+        <p class="section-label">Start here / 06</p>
+        <h2>Bring the opportunity.<br>We’ll define the next move.</h2>
+        <p>Send the objective, what is blocked, and what a practical win would look like.</p>
+        <a class="button button-primary" href="mailto:blrm13@yahoo.com?subject=2%20Ships%20RW%20LLC%20Opportunity&body=Objective%3A%0A%0AWhat%20is%20blocked%3A%0A%0AWhat%20a%20practical%20win%20looks%20like%3A">Email 2 Ships RW LLC</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Brandon Rodriguez-Washington / 2SHIPXRODWAVE. Built with GitHub Pages.</p>
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand"><img src="assets/logo-mark-red.png" alt=""><div><strong>2 Ships RW LLC</strong><span>Rare Finds. Real Value. Veteran-Owned.</span></div></div>
+      <div class="footer-links"><a href="#capabilities">Capabilities</a><a href="#approach">Approach</a><a href="2-ships-rw-brand-guidelines/">Brand guidelines</a></div>
+      <p>© <span data-year></span> 2 Ships RW LLC · Southern California</p>
+    </div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
