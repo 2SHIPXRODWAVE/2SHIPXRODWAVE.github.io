@@ -130,6 +130,18 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
 .initiative-feature p, .initiative-card p { color: var(--steel); }
 .entity-note { margin: 24px 0 0; padding-left: 18px; border-left: 3px solid var(--red); color: var(--steel); font-size: 14px; }
 
+.section-partners { background: linear-gradient(145deg, rgba(193,18,31,.12), transparent 42%), #0c0f13; border-bottom: 1px solid var(--gunmetal); }
+.partner-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.partner-card { min-height: 430px; padding: 38px; border: 1px solid var(--gunmetal); background: rgba(16,19,24,.92); display: flex; flex-direction: column; transition: border-color .2s ease, transform .2s ease; }
+.partner-card:hover { border-color: #5b626a; transform: translateY(-2px); }
+.partner-type { color: var(--red); font: 500 12px var(--font-mono); letter-spacing: .09em; text-transform: uppercase; }
+.partner-card h3 { margin: 28px 0 16px; font-size: clamp(30px, 3.5vw, 48px); }
+.partner-card > p { margin: 0; color: #aeb5bc; font-size: 18px; line-height: 1.7; }
+.partner-meta { margin-top: auto; padding-top: 32px; display: grid; gap: 4px; }
+.partner-meta strong { color: var(--white); }
+.partner-meta span { color: var(--steel); font: 400 12px var(--font-mono); }
+.partner-card .text-link { align-self: flex-start; margin-top: 22px; }
+
 .section-founder { background: var(--black); }
 .founder-grid { display: grid; grid-template-columns: .68fr 1.32fr; gap: 90px; align-items: center; }
 .founder-mark { min-height: 520px; position: relative; display: grid; place-items: center; border: 1px solid var(--gunmetal); background-image: linear-gradient(rgba(42,47,53,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(42,47,53,.35) 1px, transparent 1px); background-size: 64px 64px; }
@@ -201,9 +213,10 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
   .hero-proof span + span::before { display: none; }
   .section { padding: 82px 0; }
   .positioning { padding-block: 80px; }
-  .capability-grid, .initiative-grid { grid-template-columns: 1fr; }
+  .capability-grid, .initiative-grid, .partner-grid { grid-template-columns: 1fr; }
   .initiative-feature { grid-column: auto; }
   .capability-card { min-height: 250px; }
+  .partner-card { min-height: 390px; padding: 30px; }
   .process-step { grid-template-columns: 55px 1fr; }
   .process-step > div { grid-template-columns: 1fr; gap: 10px; }
   .founder-mark { min-height: 360px; }
