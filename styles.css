@@ -93,7 +93,6 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
 .hero-mark { position: relative; display: grid; place-items: center; }
 .hero-mark::before { content: ""; position: absolute; width: 76%; aspect-ratio: 1; border: 1px solid var(--gunmetal); border-radius: 50%; }
 .hero-mark img { width: min(450px, 100%); filter: drop-shadow(0 32px 50px rgba(0,0,0,.38)); }
-.coordinate { position: absolute; right: 0; bottom: 8%; color: var(--steel); font: 400 11px var(--font-mono); letter-spacing: .12em; writing-mode: vertical-rl; }
 
 .section { padding: 112px 0; }
 .section-shell { width: var(--shell); margin: 0 auto; }
