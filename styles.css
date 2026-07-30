@@ -166,7 +166,7 @@ h3 { font-size: 25px; letter-spacing: -.025em; }
 .founder-mark { min-height: 520px; position: relative; display: grid; place-items: center; border: 1px solid var(--gunmetal); background-image: linear-gradient(rgba(42,47,53,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(42,47,53,.35) 1px, transparent 1px); background-size: 64px 64px; }
 .founder-mark img { width: 82%; }
 .founder-copy > p { line-height: 1.7; }
-.founder-facts { margin-top: 34px; display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--gunmetal); }
+.founder-facts { margin-top: 34px; display: grid; grid-template-columns: repeat(2, 1fr); border-block: 1px solid var(--gunmetal); }
 .founder-facts div { padding: 24px 18px; border-right: 1px solid var(--gunmetal); }
 .founder-facts div:last-child { border-right: 0; }
 .founder-facts strong { display: block; font: 700 38px var(--font-head); color: var(--white); }
